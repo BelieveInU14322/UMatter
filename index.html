@@ -4,24 +4,7 @@
   <meta charset="UTF-8" />
   <title>UMatter</title>
 
-  <!-- Search -->
   <meta name="description" content="UMatter is a quiet on-chain reminder that you matter. No promises, no hype, just presence." />
-  <meta name="keywords" content="UMatter, Solana token, UMatter crypto, mental health crypto, meaningful crypto" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="UMatter" />
-  <meta property="og:description" content="UMatter is a quiet on-chain reminder that you matter. No promises, no hype, just presence." />
-  <meta property="og:url" content="https://BelieveInU14322.github.io/UMatter/" />
-  <meta property="og:image" content="https://arweave.net/nILA05sP7XmR9L1yt-Oz-QQ8GiwiHyCoA4kyU16ecR0" />
-  <meta property="og:image:type" content="image/jpeg" />
-
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="UMatter" />
-  <meta name="twitter:description" content="UMatter is a quiet on-chain reminder that you matter. No promises, no hype, just presence." />
-  <meta name="twitter:image" content="https://arweave.net/nILA05sP7XmR9L1yt-Oz-QQ8GiwiHyCoA4kyU16ecR0" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
@@ -31,41 +14,76 @@
       color: #eaeaea;
       display: flex;
       justify-content: center;
-      padding: 3rem 1rem;
+      padding: 4rem 1.5rem;
       margin: 0;
     }
+
     .container {
-      max-width: 640px;
-      line-height: 1.6;
+      max-width: 680px;
+      line-height: 1.75;
     }
+
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 0.5rem;
+      letter-spacing: -0.5px;
     }
-    h2 {
-      font-weight: normal;
-      color: #b3b3b3;
-      margin-top: 0;
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #9e9e9e;
+      margin-bottom: 3rem;
     }
-    h3 {
-      margin-top: 2rem;
-    }
+
     p {
-      margin: 1rem 0;
+      margin: 1.4rem 0;
+      font-size: 1.05rem;
     }
-    code {
+
+    .divider {
+      height: 1px;
+      background: #222;
+      margin: 3rem 0;
+    }
+
+    .token-box {
+      background: #151518;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    .token-box p {
+      margin: 0.6rem 0;
+      font-size: 0.95rem;
+      color: #cfcfcf;
+    }
+
+    .mint {
+      font-family: monospace;
+      font-size: 0.85rem;
+      word-break: break-all;
       background: #1c1c20;
-      padding: 0.75rem;
-      display: block;
-      margin: 0.75rem 0;
-      overflow-wrap: break-word;
+      padding: 0.8rem;
       border-radius: 6px;
-      font-size: 0.9rem;
+      margin-top: 0.8rem;
     }
+
     .footer {
-      margin-top: 3rem;
+      margin-top: 4rem;
       font-size: 0.9rem;
-      color: #888;
+      color: #777;
+      text-align: center;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2.2rem;
+      }
     }
   </style>
 </head>
@@ -73,11 +91,7 @@
 <body>
   <div class="container">
     <h1>UMatter</h1>
-    <h2>A reminder that you matter.</h2>
-
-    <p>
-      UMatter exists as a quiet reminder that <strong>you matter</strong>.
-    </p>
+    <div class="subtitle">A quiet reminder that you matter.</div>
 
     <p>
       It doesn’t promise returns.<br />
@@ -87,41 +101,46 @@
 
     <p>
       It simply exists — on-chain, immutable — as a signal of presence.
+      Not as speculation. Not as hype. Just as a reminder.
     </p>
 
     <p>
       If it resonates, that’s enough.
     </p>
 
-    <h3>Token</h3>
-    <p><strong>Network:</strong> Solana</p>
-    <p><strong>Supply:</strong> 1,000,000,000 (fixed forever)</p>
+    <div class="divider"></div>
 
-    <p><strong>Mint address:</strong></p>
-    <code>3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L</code>
+    <h2 style="font-weight: 500; margin-bottom: 1rem;">Token</h2>
+
+    <div class="token-box">
+      <p><strong>Network:</strong> Solana</p>
+      <p><strong>Supply:</strong> 1,000,000,000 (fixed permanently)</p>
+
+      <p style="margin-top:1.2rem;"><strong>Mint:</strong></p>
+      <div class="mint">
+        3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L
+      </div>
+
+      <p style="margin-top:1.5rem;"><strong>Distribution</strong></p>
+      <p>60% Liquidity</p>
+      <p>30% Community</p>
+      <p>10% Creator</p>
+
+      <p style="margin-top:1.5rem;">
+        Mint authority: Renounced<br />
+        Freeze authority: Disabled<br />
+        LP tokens burned
+      </p>
+    </div>
+
+    <div class="divider"></div>
 
     <p>
-      Distribution:<br />
-      Liquidity — 60%<br />
-      Community — 30%<br />
-      Creator — 10%
+      If you’re reading this and things feel heavy — you matter.
     </p>
 
-    <p>
-      No mint authority.<br />
-      No freeze authority.<br />
-      No changes possible.
-    </p>
-<p>
-  If you’re reading this and things feel heavy — you matter.
-</p>
-
-<p>
-  This token was released before any liquidity existed.
-</p>
-   
     <div class="footer">
-      No team. No roadmap. No pressure.
+      Built quietly. Meant to last.
     </div>
   </div>
 </body>
