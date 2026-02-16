@@ -5,13 +5,13 @@
   <title>UMatter</title>
 
   <!-- SEO -->
-  <meta name="description" content="UMatter is a quiet on-chain reminder that you matter. No promises, no hype, just presence." />
-  <meta name="keywords" content="UMatter, Solana token, trading psychology, quiet conviction, meaningful crypto" />
+  <meta name="description" content="UMatter is a quiet on-chain reminder that you matter. No promises. No hype. Just presence." />
+  <meta name="keywords" content="UMatter, Solana token, quiet conviction, meaningful crypto, discipline, presence" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="UMatter — A reminder that you matter." />
-  <meta property="og:description" content="No promises. No hype. Just presence. A fixed-supply token on Solana." />
+  <meta property="og:description" content="No promises. No hype. Just presence." />
   <meta property="og:url" content="https://BelieveInU14322.github.io/UMatter/" />
   <meta property="og:image" content="https://arweave.net/nILA05sP7XmR9L1yt-Oz-QQ8GiwiHyCoA4kyU16ecR0" />
 
@@ -22,9 +22,6 @@
   <meta name="twitter:image" content="https://arweave.net/nILA05sP7XmR9L1yt-Oz-QQ8GiwiHyCoA4kyU16ecR0" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
 
   <style>
     body {
@@ -131,7 +128,7 @@
     <h2>A reminder that you matter.</h2>
 
     <p>
-      UMatter exists as a quiet reminder that <strong>you matter</strong>.
+      UMatter is a quiet reminder that <strong>you matter</strong>.
     </p>
 
     <p>
@@ -141,11 +138,12 @@
     </p>
 
     <p>
-      It simply exists — on-chain, immutable — as a signal of presence.
+      It exists — on-chain, immutable — as a signal of presence.
     </p>
 
     <p>
-      If it resonates, that’s enough.
+      If it resonates, that’s enough.<br />
+      It doesn’t need to be understood by everyone.
     </p>
 
     <!-- Token Info -->
@@ -158,16 +156,20 @@
       <p><strong>Mint address:</strong></p>
 
       <code>
-        <a href="https://solscan.io/token/3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L" target="_blank">
+        <a href="https://solscan.io/token/3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L" target="_blank" rel="noopener noreferrer">
         3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L
         </a>
       </code>
+
+      <p style="font-size:0.85rem; color:#888;">
+        Public ledger. Fully verifiable on-chain.
+      </p>
 
       <p>
         Initial Allocation:<br />
         Liquidity — 60%<br />
         Community — 30%<br />
-        Founding Allocation — 10%
+        Initial Allocation — 10%
       </p>
     </div>
 
@@ -176,10 +178,11 @@
       <h3>Transparency</h3>
 
       <p>
-        • Mint authority revoked<br />
-        • Freeze authority revoked<br />
+        • Mint authority permanently revoked<br />
+        • Freeze authority permanently revoked<br />
         • Liquidity pool created on Raydium<br />
-        • LP tokens burned
+        • LP tokens permanently burned<br />
+        • Supply cannot be altered
       </p>
     </div>
 
@@ -199,13 +202,18 @@
       </p>
     </div>
 
-    <!-- Share Button -->
-    <button class="share-btn" onclick="navigator.clipboard.writeText(window.location.href); alert('Link copied to clipboard');">
-      Share
-    </button>
+    <!-- Share -->
+    <button class="share-btn" onclick="copyLink()">Share</button>
+
+    <script>
+      function copyLink() {
+        navigator.clipboard.writeText(window.location.href);
+        alert("Link copied to clipboard");
+      }
+    </script>
 
     <div class="footer">
-      No team. No roadmap. No pressure.
+      No team. No roadmap. No urgency.
     </div>
 
   </div>
