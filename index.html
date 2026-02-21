@@ -35,7 +35,7 @@
     }
 
     .container {
-      max-width: 640px;
+      max-width: 680px;
       line-height: 1.7;
       text-align: center;
     }
@@ -44,7 +44,7 @@
       width: 120px;
       margin-bottom: 1.5rem;
       border-radius: 50%;
-      box-shadow: 0 0 25px rgba(255,255,255,0.08);
+      box-shadow: 0 0 30px rgba(255,255,255,0.08);
     }
 
     h1 {
@@ -95,6 +95,20 @@
       border-top: 1px solid rgba(255,255,255,0.05);
     }
 
+    .badge-button {
+      display:inline-block;
+      margin-top:1rem;
+      padding:0.6rem 1.2rem;
+      border:1px solid rgba(255,255,255,0.15);
+      border-radius:6px;
+      text-decoration:none;
+      transition: all 0.3s ease;
+    }
+
+    .badge-button:hover {
+      background: rgba(255,255,255,0.05);
+    }
+
     .footer {
       margin-top: 4rem;
       font-size: 0.9rem;
@@ -106,11 +120,8 @@
 <body>
   <div class="container">
 
-    <img
-      src="https://arweave.net/nILA05sP7XmR9L1yt-Oz-QQ8GiwiHyCoA4kyU16ecR0"
-      class="logo"
-      alt="UMatter Logo"
-    />
+    <!-- Logo -->
+    <img src="https://arweave.net/nILA05sP7XmR9L1yt-Oz-QQ8GiwiHyCoA4kyU16ecR0" class="logo" alt="UMatter Logo" />
 
     <h1>UMatter</h1>
     <h2>A reminder that you matter.</h2>
@@ -130,10 +141,10 @@
     </p>
 
     <p>
-      If it resonates, that’s enough.
+      If it resonates, it’s yours too.
     </p>
 
-    <!-- TOKEN INFO -->
+    <!-- Token Info -->
     <div class="section">
       <h3>Token</h3>
 
@@ -143,47 +154,57 @@
       <p><strong>Mint address:</strong></p>
 
       <code>
-        <a href="https://solscan.io/token/3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L" target="_blank">
-          3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L
-        </a>
+        3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L
       </code>
 
       <p>
         Allocation:<br />
         Liquidity — 80%<br />
         Community — 10%<br />
-        Creator — 10%
+        Founding Allocation — 10%
       </p>
     </div>
 
-    <!-- TRANSPARENCY -->
+    <!-- Transparency -->
     <div class="section">
       <h3>Transparency</h3>
 
       <p>
         • Mint authority revoked<br />
-        • Freeze authority revoked
+        • Freeze authority revoked<br />
+        • Liquidity pool created on Raydium<br />
+        • LP tokens burned<br />
       </p>
 
-      <p>
-        Liquidity pool created on Raydium.<br />
-        LP tokens permanently burned.
-      </p>
+      <!-- Solscan Badge Button -->
+      <a href="https://solscan.io/token/3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L" 
+         target="_blank" 
+         class="badge-button">
+         Verify on Solscan
+      </a>
 
-      <p><strong>LP Token Mint:</strong></p>
+      <!-- Optional: Add Raydium link below when ready -->
+      <!--
+      <br /><br />
+      <a href="PASTE_YOUR_RAYDIUM_POOL_LINK_HERE" 
+         target="_blank" 
+         class="badge-button">
+         View Liquidity Pool
+      </a>
+      -->
 
-      <code>
-        <a href="https://solscan.io/token/D7Seh5SVUknYjCLq1kNiDamyYNKjRzwnoAtJyZU335Um" target="_blank">
-          D7Seh5SVUknYjCLq1kNiDamyYNKjRzwnoAtJyZU335Um
-        </a>
-      </code>
-
-      <p>
-        Liquidity cannot be removed.
-      </p>
+      <!-- Optional On-Chain Milestones -->
+      <!--
+      <div style="margin-top:2rem;font-size:0.9rem;color:#aaa;">
+        <strong>On-Chain Milestones</strong><br /><br />
+        • Mint revoked — DATE<br />
+        • Freeze revoked — DATE<br />
+        • LP burned — DATE<br />
+      </div>
+      -->
     </div>
 
-    <!-- INTENT -->
+    <!-- Intent -->
     <div class="section">
       <h3>Intent</h3>
 
