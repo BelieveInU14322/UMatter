@@ -5,7 +5,7 @@
   <title>UMatter</title>
 
   <!-- SEO -->
-  <meta name="description" content="UMatter is a quiet on-chain reminder that you matter. No promises, no hype, just presence." />
+  <meta name="description" content="UMatter is a quiet on-chain reminder that you matter. No promises. No hype. Just presence." />
   <meta name="keywords" content="UMatter, Solana token, trading psychology, quiet conviction, meaningful crypto" />
 
   <!-- Open Graph -->
@@ -41,33 +41,43 @@
     }
 
     .logo {
-      width: 120px;
+      width: 130px;
       margin-bottom: 1.5rem;
       border-radius: 50%;
-      box-shadow: 0 0 30px rgba(255,255,255,0.08);
+      box-shadow: 0 0 35px rgba(255,255,255,0.08);
     }
 
     h1 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
-      text-shadow: 0 0 15px rgba(255,255,255,0.05);
+      text-shadow: 0 0 20px rgba(255,255,255,0.05);
     }
 
     h2 {
       font-weight: normal;
       color: #b3b3b3;
-      margin-top: 0;
       margin-bottom: 2rem;
     }
 
     h3 {
       margin-top: 3rem;
       margin-bottom: 1rem;
-      color: #ffffff;
+      font-size: 1.2rem;
+      letter-spacing: 0.5px;
     }
 
     p {
       margin: 1rem 0;
+    }
+
+    code {
+      background: #1c1c20;
+      padding: 0.8rem;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      word-break: break-all;
     }
 
     a {
@@ -79,33 +89,38 @@
       text-decoration: underline;
     }
 
-    code {
-      background: #1c1c20;
-      padding: 0.75rem;
-      display: block;
-      margin: 0.75rem auto;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      word-break: break-all;
-    }
-
     .section {
       margin-top: 3rem;
       padding-top: 2rem;
-      border-top: 1px solid rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(255,255,255,0.06);
     }
 
     .badge-button {
-      display:inline-block;
-      margin-top:1rem;
-      padding:0.6rem 1.2rem;
-      border:1px solid rgba(255,255,255,0.15);
-      border-radius:6px;
-      text-decoration:none;
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.03);
       transition: all 0.3s ease;
     }
 
     .badge-button:hover {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .share-btn {
+      margin-top: 2rem;
+      padding: 0.6rem 1.2rem;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 6px;
+      background: transparent;
+      color: #eaeaea;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .share-btn:hover {
       background: rgba(255,255,255,0.05);
     }
 
@@ -114,6 +129,7 @@
       font-size: 0.9rem;
       color: #888;
     }
+
   </style>
 </head>
 
@@ -141,31 +157,33 @@
     </p>
 
     <p>
-      If it resonates, it’s yours too.
+      If it resonates, that’s enough.
     </p>
 
-    <!-- Token Info -->
+    <!-- TOKEN INFO -->
     <div class="section">
       <h3>Token</h3>
 
       <p><strong>Network:</strong> Solana</p>
       <p><strong>Supply:</strong> 1,000,000,000 (fixed forever)</p>
 
-      <p><strong>Mint address:</strong></p>
+      <p><strong>Mint Address:</strong></p>
 
       <code>
+        <a href="https://solscan.io/token/3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L" target="_blank">
         3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L
+        </a>
       </code>
 
       <p>
         Allocation:<br />
         Liquidity — 80%<br />
         Community — 10%<br />
-        Founding Allocation — 10%
+        Creator — 10%
       </p>
     </div>
 
-    <!-- Transparency -->
+    <!-- TRANSPARENCY -->
     <div class="section">
       <h3>Transparency</h3>
 
@@ -173,38 +191,30 @@
         • Mint authority revoked<br />
         • Freeze authority revoked<br />
         • Liquidity pool created on Raydium<br />
-        • LP tokens burned<br />
+        • LP tokens burned permanently
       </p>
 
-      <!-- Solscan Badge Button -->
+      <br />
+
       <a href="https://solscan.io/token/3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L" 
          target="_blank" 
          class="badge-button">
          Verify on Solscan
       </a>
 
-      <!-- Optional: Add Raydium link below when ready -->
-      <!--
-      <br /><br />
-      <a href="PASTE_YOUR_RAYDIUM_POOL_LINK_HERE" 
+      <a href="https://app.raydium.io/swap/?inputCurrency=SOL&outputCurrency=3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L" 
          target="_blank" 
          class="badge-button">
-         View Liquidity Pool
+         View on Raydium
       </a>
-      -->
 
-      <!-- Optional On-Chain Milestones -->
-      <!--
-      <div style="margin-top:2rem;font-size:0.9rem;color:#aaa;">
-        <strong>On-Chain Milestones</strong><br /><br />
-        • Mint revoked — DATE<br />
-        • Freeze revoked — DATE<br />
-        • LP burned — DATE<br />
-      </div>
-      -->
+      <p style="margin-top:2rem; font-size:0.85rem; color:#aaa;">
+        LP Burn Transaction:<br />
+        3vk3LUYBkufbQt6DZtZYUo1o1qom2Rm4rcyG1KKBVhnnrPakMNM6ofaviFEyprZz5o2dkHsAN6SCwY8ATTbyJKxW
+      </p>
     </div>
 
-    <!-- Intent -->
+    <!-- INTENT -->
     <div class="section">
       <h3>Intent</h3>
 
@@ -219,6 +229,11 @@
         If you find it, it was meant for you.
       </p>
     </div>
+
+    <!-- SHARE BUTTON -->
+    <button class="share-btn" onclick="navigator.clipboard.writeText(window.location.href); alert('Link copied to clipboard');">
+      Share
+    </button>
 
     <div class="footer">
       No team. No roadmap. No pressure.
