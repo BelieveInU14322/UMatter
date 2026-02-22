@@ -4,14 +4,24 @@
   <meta charset="UTF-8" />
   <title>UMatter</title>
 
-  <meta name="description" content="UMatter is a quiet on-chain reminder that you matter. No promises. No hype. Just presence." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- SEO -->
+  <meta name="description" content="UMatter is a quiet on-chain reminder that you matter. No promises, no hype, just presence." />
+  <meta name="keywords" content="UMatter, Solana token, trading psychology, quiet conviction, meaningful crypto" />
 
   <!-- Open Graph -->
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="UMatter — A reminder that you matter." />
   <meta property="og:description" content="No promises. No hype. Just presence. A fixed-supply token on Solana." />
-  <meta property="og:image" content="https://arweave.net/nILA05sP7XmR9L1yt-Oz-QQ8GiwiHyCoA4kyU16ecR0" />
   <meta property="og:url" content="https://BelieveInU14322.github.io/UMatter/" />
+  <meta property="og:image" content="https://arweave.net/nILA05sP7XmR9L1yt-Oz-QQ8GiwiHyCoA4kyU16ecR0" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="UMatter — A reminder that you matter." />
+  <meta name="twitter:description" content="No promises. No hype. Just presence." />
+  <meta name="twitter:image" content="https://arweave.net/nILA05sP7XmR9L1yt-Oz-QQ8GiwiHyCoA4kyU16ecR0" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
     body {
@@ -25,7 +35,7 @@
     }
 
     .container {
-      max-width: 640px;
+      max-width: 680px;
       line-height: 1.7;
       text-align: center;
     }
@@ -40,6 +50,7 @@
     h1 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
+      text-shadow: 0 0 15px rgba(255,255,255,0.05);
     }
 
     h2 {
@@ -49,10 +60,14 @@
       margin-bottom: 2rem;
     }
 
-    .section {
+    h3 {
       margin-top: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid rgba(255,255,255,0.06);
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    p {
+      margin: 1rem 0;
     }
 
     code {
@@ -61,30 +76,40 @@
       display: block;
       margin: 0.75rem auto;
       border-radius: 6px;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       word-break: break-all;
     }
 
+    .section {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    /* Animated Glow Buttons */
     .badge-button {
       display: inline-block;
-      margin: 0.5rem 0.5rem 0 0.5rem;
-      padding: 0.6rem 1.2rem;
+      margin: 0.6rem 0.4rem;
+      padding: 0.65rem 1.4rem;
       border-radius: 6px;
       background: rgba(255,255,255,0.08);
       color: #eaeaea;
       text-decoration: none;
       font-size: 0.9rem;
       transition: all 0.3s ease;
+      box-shadow: 0 0 0 rgba(138,180,255,0.0);
+      animation: subtleGlow 4s ease-in-out infinite;
     }
 
     .badge-button:hover {
       background: rgba(255,255,255,0.15);
+      transform: translateY(-1px);
     }
 
-    .subtext {
-      font-size: 0.85rem;
-      color: #9a9a9a;
-      margin-top: 0.75rem;
+    @keyframes subtleGlow {
+      0% { box-shadow: 0 0 0 rgba(138,180,255,0.0); }
+      50% { box-shadow: 0 0 18px rgba(138,180,255,0.12); }
+      100% { box-shadow: 0 0 0 rgba(138,180,255,0.0); }
     }
 
     .footer {
@@ -108,8 +133,8 @@
     </p>
 
     <p>
-      It doesn’t promise returns.<br>
-      It doesn’t claim utility.<br>
+      It doesn’t promise returns.<br />
+      It doesn’t claim utility.<br />
       It doesn’t ask for belief.
     </p>
 
@@ -121,64 +146,48 @@
       If it resonates, that’s enough.
     </p>
 
-    <!-- TOKEN SECTION -->
     <div class="section">
       <h3>Token</h3>
 
       <p><strong>Network:</strong> Solana</p>
       <p><strong>Supply:</strong> 1,000,000,000 (fixed forever)</p>
 
-      <p><strong>Mint Address:</strong></p>
-
       <code>
         3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L
       </code>
 
       <p>
-        Allocation:<br>
-        Liquidity — 80%<br>
-        Community — 10%<br>
-        Creator — 10%
+        Allocation:<br />
+        Liquidity — 80%<br />
+        Community — 10%<br />
+        Founding Allocation — 10%
       </p>
 
-      <a href="https://solscan.io/token/3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L" target="_blank" class="badge-button">
+      <a class="badge-button" href="https://solscan.io/token/3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L" target="_blank">
         Verify on Solscan
       </a>
 
-      <a href="https://raydium.io/swap/?inputMint=sol&outputMint=3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L"
-         target="_blank"
-         class="badge-button">
-        View on Raydium
+      <a class="badge-button" href="https://raydium.io/swap/?inputMint=sol&outputMint=3aYgGz9NJgsPK5WV76HcCBnLsEqgDWmp8Pzt9Y883J6L" target="_blank">
+        Trade on Raydium
       </a>
-
-      <div class="subtext">
-        View liquidity and price directly on Raydium’s swap interface.
-      </div>
     </div>
 
-    <!-- TRANSPARENCY -->
     <div class="section">
       <h3>Transparency</h3>
 
       <p>
-        • Mint authority revoked<br>
-        • Freeze authority revoked<br>
-        • Liquidity added and LP tokens permanently burned
+        • Mint authority revoked<br />
+        • Freeze authority revoked<br />
+        • Liquidity pool created on Raydium<br />
+        • LP tokens permanently burned<br />
       </p>
 
-      <p class="subtext">
-        LP Burn Transaction:<br>
-        Signature: 3vk3LUYBkufbQt6DZtZYUo1o1qom2Rm4rcyG1KKBVhnnrPakMNM6ofaviFEyprZz5o2dkHsAN6SCwY8ATTbyJKxW
-      </p>
-
-      <p class="subtext">
-        Token Created: [Insert original mint timestamp here]<br>
-        Liquidity Added: [Insert pool creation timestamp]<br>
-        LP Burned: [Insert burn timestamp]
+      <p style="font-size:0.85rem;color:#aaa;">
+        LP burn transaction signature:<br />
+        3vk3LUYBkufbQt6DZtZYUo1o1qom2Rm4rcyG1KKBVhnnrPakMNM6ofaviFEyprZz5o2dkHsAN6SCwY8ATTbyJKxW
       </p>
     </div>
 
-    <!-- INTENT -->
     <div class="section">
       <h3>Intent</h3>
 
@@ -188,8 +197,8 @@
       </p>
 
       <p>
-        This project does not compete for attention.<br>
-        It exists quietly.<br>
+        It does not compete for attention.<br />
+        It exists quietly.<br />
         If you find it, it was meant for you.
       </p>
     </div>
